@@ -1,0 +1,31 @@
+<!-- Heredar página base-->
+{% extends 'base.html' %}
+
+<!-- Sección que indica que esta sección se insertará en la página base-->
+{% block content %}
+<main class="container">
+    <div class="row">
+        <div class="col-md-4 offset-md-4 mt-5">
+            <form action="/signin/" method="POST" class="card card-body">
+                <h1 class="text-center">SignIn</h1>
+                
+                {{error}}
+                {% csrf_token %}
+                {% comment %} {{form.as_p}} {% endcomment %}
+                <div class="mb-3">
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" id="username" placeholder="Write your username" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" placeholder="Write your password" class="form-control">
+                </div>       
+                <button class="btn btn-primary">
+                    Signin
+                </button>
+            </form>
+        </div>
+    </div>
+</main>
+{% endblock %}
+

@@ -1,0 +1,21 @@
+<!-- Heredar página base-->
+{% extends 'base.html' %}
+
+<!-- Sección que indica que esta sección se insertará en la página base-->
+{% block content %}
+<main class="container py-5">
+    <section class="card card-body">
+        <h1 class="dispaly-1 text-center">Django App</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, voluptate aliquid suscipit modi molestias magni tempora eum illum commodi quam perspiciatis autem possimus dolorum nemo at corrupti porro aperiam saepe. Facilis nemo minus modi delectus quisquam praesentium tenetur obcaecati dicta corrupti temporibus, pariatur nam, eaque autem! Nesciunt nisi necessitatibus unde voluptatem dolore aliquid, sapiente dolorum cumque repellendus! Magnam laborum ad, mollitia modi blanditiis odit numquam quam, et praesentium alias harum doloremque? Illo inventore voluptate quidem quod consectetur itaque nulla beatae eaque architecto aspernatur eos necessitatibus neque accusamus libero in iusto, natus incidunt placeat mollitia eum unde! Nostrum iste quia dignissimos.</p>
+
+    <div class="text-center">
+        <a class="btn btn-secondary" href="/signin/">
+            Signin
+        </a>
+        <a class="btn btn-dark" href="/signup/">
+            Signup
+        </a>
+    </div>
+    </section>
+</main>
+{% endblock %}
